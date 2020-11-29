@@ -23,7 +23,7 @@ npm i mysql2
 npm i nodemon -D
 ```
 
-##### Step 3: Update app.js
+##### Step 3: Create app.js
 
 ```
 const express = require('express');
@@ -49,3 +49,14 @@ app.get("/",(req,res)=>res.send("REST API Working");
 app.listen(port, () => console.log(`Example app listening on port!`, port));
 ```
 
+##### Step 4: Start the Node JS server using nodemon ( Development )
+
+```
+nodemon app.js
+````
+
+##### Step 5: Test the REST End point
+
+- http://localhost:5000
+
+- Output: REST API Working
