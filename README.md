@@ -29,6 +29,8 @@ npm i nodemon -D
 ##### Step 3: Create app.js
 
 ```
+//Use dotenv to read .env vars into Node
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const app = express();
