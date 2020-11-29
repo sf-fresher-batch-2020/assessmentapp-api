@@ -1,6 +1,8 @@
 # assessmentapp-api
 
 
+
+
 # Clone the Project
 
 ```
@@ -20,6 +22,7 @@ npm init
 npm i express@next
 npm i cors
 npm i mysql2
+npm i dotenv 
 npm i nodemon -D
 ```
 
