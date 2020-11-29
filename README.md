@@ -23,7 +23,7 @@ npm i mysql2
 npm i nodemon -D
 ```
 
-##### Step 3: Update app.js
+##### Step 3: Create app.js
 
 ```
 const express = require('express');
@@ -45,7 +45,34 @@ const pool = mysql.createPool({
     connectionLimit: 1
 });
 */
-app.get("/",(req,res)=>res.send("REST API Working");
+app.get("/",(req,res)=>res.send("REST API Working"));
 app.listen(port, () => console.log(`Example app listening on port!`, port));
 ```
 
+##### Step 4: Start the Node JS server using nodemon ( Development )
+
+```
+nodemon app.js
+````
+
+##### Step 5: Test the REST End point
+
+- http://localhost:5000
+
+- Output: REST API Working
+
+
+##### Step 6: Heroku Deployment - Create a file ( Procfile) with the below contents
+
+```
+web: node app.js
+```
+
+##### Step 7: Commit your files
+
+```
+git add package.json package-lock.json app.js Procfile
+git commit -m "Added REST API "
+git push -u origin main
+```
+- git 
