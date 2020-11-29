@@ -45,7 +45,7 @@ const pool = mysql.createPool({
     connectionLimit: 1
 });
 */
-app.get("/",(req,res)=>res.send("REST API Working");
+app.get("/",(req,res)=>res.send("REST API Working"));
 app.listen(port, () => console.log(`Example app listening on port!`, port));
 ```
 
